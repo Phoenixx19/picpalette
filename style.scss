@@ -1,0 +1,188 @@
+---
+---
+
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
+
+:root {
+    --white: #FFF;
+    --white-20: rgba(255,255,255,0.2);
+    --white-40: rgba(255,255,255,0.4);
+    --black: #000;
+    --black-20: rgba(0,0,0,0.2);
+    --black-40: rgba(0,0,0,0.4);
+    --radius-section: 30px;
+    --radius: 15px;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    margin: 0;
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 800;
+}
+h2 {
+    margin: .5rem 0;
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 800;
+}
+h5 {
+    margin: 0;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+p {
+    margin: .75rem 0;
+    font-weight: bold;
+    color: #C4C4C4;
+    font-size: 20px;
+    strong {
+        font-weight: 800;
+    }
+}
+
+/* --------------------- */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.flexd-column {
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+
+body {
+    width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    object-fit: cover;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+header {
+    border-bottom: 0.5px solid var(--white-40);
+    border-radius: 2em;
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+}
+section {
+    display: block;
+    width: 90%;
+    height: 90%;
+    backdrop-filter: blur(15px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--radius-section);
+    background-color: var(--white-20);
+    border: 1px solid var(--white-40);
+}
+button, select {
+    padding: .75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #DD7744;
+    color: var(--white);
+    border-radius: var(--radius);
+    border: 0;
+    outline: 0;
+    -moz-outline-style: none;
+    cursor: pointer;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 2.5rem;
+    //background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a0aec0'%3e%3cpath d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.25rem 1.25rem;
+}
+
+section.main {
+    overflow-y: auto;
+}
+.picpalette {
+    margin-left: 2rem;
+    display: flex;
+    font-weight: bolder;
+    flex-direction: column;
+    justify-content: center;
+    cursor: crosshair;
+
+    h1 {
+        position: relative;
+    }
+}
+.settings {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 2rem;
+    font-size: 0;
+    > button, > select {
+        margin-right: 1.5rem;
+    }
+    a {
+        color: #DD7744;
+        margin-left: .5rem;
+    }
+}
+
+div.gradient {
+    position: absolute;
+    height: .4rem;
+    width: 100%;
+    display: block;
+    background: var(--black);
+    bottom: 0.525rem;
+}
+div.content {
+    padding: 2rem;
+}
+.details {
+    img {
+        max-width: 40%;
+        height: 250px;
+        border-radius: var(--radius);
+        border: 1px solid var(--white-40);
+    }
+    div {
+        padding-left: 2rem;
+    }
+    div:last-child {
+        text-align: right;
+    }
+}
+
+.colors {
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    border-radius: var(--radius);
+    overflow: hidden;
+
+    .color {
+        width: 25%;
+        max-width: 25%;
+        height: 50%;
+        min-height: 30vh;
+        background: green;
+    }
+}

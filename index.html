@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>picpalette · The fastest way to find your image palette!</title>
+</head>
+<body style="background: url(https://images.pexels.com/photos/3060930/pexels-photo-3060930.jpeg);">
+    <section class="flex flexd-column main">
+        <header class="flex space-between">
+            <div class="picpalette">
+                <h1>picpalette<div class="gradient"></div></h1>
+            </div>
+            <div class="settings">
+                <select name="export" class="export" id="export">
+                    <option value="hex">HEX</option>
+                    <option value="rgb">RGB</option>
+                    <option value="css">CSS</option>
+                    <option value="hsl">HSL</option>
+                    <option value="hsb">HSB</option>
+                </select>
+                <button class="new" id="new">New picpalette</button>
+                <a href="https://github.com/Phoenixx19" target="_blank"><i icon-name="github"></i></a>
+            </div>
+        </header>
+        <hr class="after-header">
+        <div class="content flex flexd-column flex-grow">
+            <div class="details flex">
+                <img src="https://images.pexels.com/photos/3060930/pexels-photo-3060930.jpeg" alt="Image uploaded">
+                <div class="flex-grow">
+                    <h5>In-Depth Details</h5>
+                    <h2>3486 x 2854 px</h2>
+                    <p>
+                        Ratio: <strong>16:9</strong>
+                        <br>
+                        Resolution: <strong>24 dpi</strong>
+                    </p>
+                    <button>
+                        <i icon-name="table"></i>
+                        <span>&nbsp;Copy all colors</span>
+                    </button>
+                </div>
+                <div>
+                    <h5>Dominant Color</h5>
+                    <h2>Orange Shot</h2>
+                    <p>#dd7744</p>
+                    <button><i icon-name="copy"></i></button>
+                </div>
+            </div>
+            <div class="colors flex flex-grow">
+                <div class="color" style="background: violet;"></div>
+                <div class="color" style="background: red;"></div>
+                <div class="color" style="background: orange;"></div>
+                <div class="color" style="background: blue;"></div>
+                <div class="color" style="background: black;"></div>
+                <div class="color" style="background: chocolate;"></div>
+                <div class="color" style="background: yellow;"></div>
+                <div class="color"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+      </script>
+</body>
+</html>
