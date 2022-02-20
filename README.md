@@ -1,4 +1,4 @@
-# \[WIP\] picpalette <img src ="https://raw.githubusercontent.com/Phoenixx19/picpalette/main/icon.png" width="80px" alt="logo" align ="right">
+# \[WIP\] picpalette <img src ="https://raw.githubusercontent.com/Phoenixx19/picpalette/www/icon.png" width="80px" alt="logo" align ="right">
 
 Drop an image and get a bunch of colors!
 
