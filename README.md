@@ -1,3 +1,6 @@
+> ## Current state of development
+> I wish I could continue this project but I dont have the time so I think I'll just leave it as is.<br>I'll come back on it when I can or want. :^)
+
 # \[WIP\] picpalette <img src ="https://raw.githubusercontent.com/Phoenixx19/picpalette/www/icon.png" width="80px" alt="logo" align ="right">
 
 Drop an image and get a bunch of colors!
